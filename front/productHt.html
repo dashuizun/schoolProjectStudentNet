@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<link rel="stylesheet" href="static/css/productCss.css"></script>
+		<script src ="static/js/vue-resource.min.js"></script>
+		<script src="static/js/vue.js"></script>
+		<script src="static/js/productJs.js"></script>
+	</head>
+	<body>
+		<div id="app">
+			<template v-if="list.length">
+				<table>
+					<thead>
+						<tr>
+							<th>序号</th>
+							<th>出售人</th>
+							<th>商品名称</th>
+							<th>商品单价</th>
+							<th>购买数量</th>
+							<th>操作</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr v-for="(item,index) in list">
+							<td>{{index+1}}</td>
+							<td>{{item.name}}</td>
+							<td>{{item.pname}}</td>
+							<td>{{item.price}}</td>
+							
+							<td>
+								<button @click="handleReduce(index)" :disabled="item.count ===0">-</button>
+								{{item.count}}
+								<button @click="handleAdd(index)">+</button>
+							</td>
+							<td>
+								<button @click="handleRemove(index)">移除</button>
+							</td>
+						</tr>
+					<thead>
+						<tr>
+							<th>总价:</th>
+							<th colspan="3">
+								<div>总价：¥{{totalPrice}}
+								</div>
+							</th>
+							<th colspan="2">
+								<button @click="Enter(index)">确认购买</button>
+							</th>
+						</tr>
+					</thead>
+					</tbody>
+					
+				</table>
+			</template>
+			<div v-else>市场为空</div>
+		</div>
+		
+	</body>
+</html>

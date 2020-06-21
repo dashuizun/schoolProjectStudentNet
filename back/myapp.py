@@ -1,10 +1,13 @@
 from flask import Flask,render_template
+#from app.main import mainIndex
 
-app=Flask(__name__,template_folder='../front',static_url_path='/',static_folder='../front/static');
+from app import create_app
 
-@app.route('/')
-def index():
-    return render_template('index.html')
+
+app = create_app('default')
+
+#app.jinja_env.variable_start_string = '{['
+#app.jinja_env.variable_end_string = ']}'
 
 if __name__ == '__main__':
     app.run()
