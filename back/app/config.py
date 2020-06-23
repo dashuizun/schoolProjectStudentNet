@@ -1,6 +1,3 @@
-#!/usr/bin/env python
-# -*- coding:utf-8 -*-
-
 import os
 
 class Config:
@@ -8,9 +5,10 @@ class Config:
     SQLALCHEMY_COMMIT_ON_TEARDOWN = True
     SQLALCHEMY_RECORD_QUERIES = True
     SQLALCHEMY_TRACK_MODIFICATIONS = True
+    SQLALCHEMY_DATABASE_URI = True
     FLASKY_ADMIN = '1534273733@qq.com'
     check_same_thread = False
-
+    SQLALCHEMY_COMMIT_TEARDOWN = True
     MAIL_SERVER = 'smtp.live.com'
     MAIL_PORT = '587'
     MAIL_USE_TLS = 'true'
@@ -20,7 +18,6 @@ class Config:
 
     FLASKY_MAIL_SUBJECT_PREFIX = ''
     FLASKY_MAIL_SENDER = '<1534273733@qq.com>'
-
 
     LANGUAGES = ['en', 'zh']
 
@@ -39,9 +36,6 @@ class TestingConfig(Config):
 
 class ProductionConfig(Config):
     SQLALCHEMY_DATABASE_URI = 'mysql+mysqlconnector://root:123456@127.0.0.1:3306/studentsystem'
-
-
-
 
 config = {
     'development': DevelopmentConfig,

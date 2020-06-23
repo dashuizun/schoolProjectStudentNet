@@ -1,44 +1,69 @@
 <!DOCTYPE html>
-<html>
-	<head>
-		<meta charset="UTF-8">
-		<title></title>
-	</head>
-	<body>
-		<div id="app">
-			
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>vue API</title>
+	<style>
+	[v-cloak] { display: none; }
+	</style>
+	<script src="static/js/vue.js"></script>
+	<script src="static/js/vue-resource.min.js"></script>
+</head>
+<body>
+	<p>当前评论：</p>
+	<p>-------------------------------</p>
+	<div id="app" v-cloak>
+		<div v-for="task in tasks">
+			<div>
+				<p>{{task.id}}</p>
+				<p>名字：{{ task.cname }}</p>
+				<p>内容：{{ task.description }}</p>
+				<p>-------------------------------</p>
+			</div>
 		</div>
+		<p>发表评论：</p>
+		<div class="box">
+			<p>用户名：<input type="text" v-model="new_task.cname"></p><br>
+			<p>内容：<textarea cols="30" rows="10" v-model="new_task.description"></textarea></p>
+			<button @click="addTask">确认发表评论</button>
+		</div>
+	</div>
+
+
 	<script>
 		var vue = new Vue({
 			el: '#app',
 			data: {
-				tasks: [
-				    {
-				        'id': 1,
-				        'title': '张三',
-				        'description': '这网站真好用',
-				    }
-				],
+				tasks: [],
+				new_task: {
+					cname: '',
+					description: ''
+				}
 			},
-			compiled: function() {
-				var self = this;
-				//在编译后即调用API接口取得服务器端数据
-				self.$http.get('/todo/api/mysql').then(function(res) {
-					self.tasks = res.data.tasks;
-				});
+			mounted: function(){
+				this.get()
 			},
 			methods: {
 				addTask: function() {
 					var self = this;
-					self.$http.post('/todo/api/showMysql', {
-						title: self.new_task.title,
+					self.$http.post('/todo/api/addCommunityApi', {
+						cname: self.new_task.cname,
 						description: self.new_task.description
 					}).then(function(res) {
 						self.tasks = res.data.tasks;
 					});
 				},
+				get:function() {
+					var self = this;
+					//在编译后即调用API接口取得服务器端数据
+					self.$http.get('/todo/api/communityApi').then(function(res) {
+						self.tasks = res.data.tasks;
+					},function(){
+	                        console.log('请求失败处理');
+	                    });
+				},
 			}
 		})
 	</script>
-	</body>
+</body>
 </html>

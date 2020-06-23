@@ -14,16 +14,53 @@ NAME 卖家的用户名
 PNAME 产品名
 PRICE 价格
 DESCRIPTION 产品描述
-CREATE TABLE PRODUCT(ID int NOT NULL ,NAME varchar(20) NOT NULL ,PNAME varchar(20) NOT NULL ,PEICE int NOT NULL ,DESCRIPTION varchar(100) NULL ,PRIMARY KEY (ID));
-INSERT INTO PRODUCT(ID,NAME,PNAME,PEICE,DESCRIPTION)VALUES(1,"管理员","二手小米6",500,"用过几个月，成新，买了新手机打算换掉");
-INSERT INTO PRODUCT(ID,NAME,PNAME,PEICE,DESCRIPTION)VALUES(2,"用户1","全新公牛插排",20,"不小心买多了个插排，全新的公牛！");
-INSERT INTO PRODUCT(ID,NAME,PNAME,PEICE,DESCRIPTION)VALUES(3,"用户2","全新TYPE-C充电线",10,"全新的充电线线");
+CREATE TABLE PRODUCT(ID int NOT NULL ,NAME varchar(20) NOT NULL ,PNAME varchar(20) NOT NULL ,PRICE int NOT NULL ,DESCRIPTION varchar(100) NULL ,PRIMARY KEY (ID));
+INSERT INTO PRODUCT(ID,NAME,PNAME,PRICE,DESCRIPTION)VALUES(1,"管理员","二手小米6",500,"用过几个月，成新，买了新手机打算换掉");
+INSERT INTO PRODUCT(ID,NAME,PNAME,PRICE,DESCRIPTION)VALUES(2,"用户1","全新公牛插排",20,"不小心买多了个插排，全新的公牛！");
+INSERT INTO PRODUCT(ID,NAME,PNAME,PRICE,DESCRIPTION)VALUES(3,"用户2","全新TYPE-C充电线",10,"全新的充电线线");
 
 COMMUNITY
 ID 序号
 NAME 发帖人的用户名
-PNAME 帖子内容
+DESCRIPTION 帖子内容
 CREATE TABLE COMMUNITY(ID int NOT NULL ,NAME varchar(20) NOT NULL ,DESCRIPTION varchar(100) NULL ,PRIMARY KEY (ID));
 INSERT INTO COMMUNITY(ID,NAME,DESCRIPTION)VALUES(1,"管理员","这交流平台真好用！！！");
 INSERT INTO COMMUNITY(ID,NAME,DESCRIPTION)VALUES(2,"用户1","有人吗？有人吗？有人吗？有人吗？");
 INSERT INTO COMMUNITY(ID,NAME,DESCRIPTION)VALUES(3,"用户2","呐呐呐呐呐呐呐呐呐呐呐呐呐呐呐呐呐呐呐呐呐呐呐呐呐");
+
+from flask import Flask
+from .config import config
+from flask_sqlalchemy import SQLAlchemy
+from flask_bootstrap import Bootstrap
+
+bootstrap = Bootstrap()
+db = SQLAlchemy()
+
+def create_app(config_name):
+    app = Flask(__name__,template_folder='../../front',static_url_path='',static_folder='../../front')
+    app.config.from_object(config[config_name])
+    config[config_name].init_app(app)
+    bootstrap.init_app(app)
+    db.init_app(app)
+    from .main import main as main_blueprint
+    app.register_blueprint(main_blueprint)
+    from .api import api as api_blueprint
+    app.register_blueprint(api_blueprint)
+
+    return app
+
+
+from app import create_app
+
+app = create_app('default')
+
+app.jinja_env.variable_start_string = '{['
+app.jinja_env.variable_end_string = ']}'
+
+if __name__ == '__main__':
+    app.run()
+
+
+
+
+

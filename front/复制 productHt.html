@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<link rel="stylesheet" href="static/css/productCss.css"></script>
+		<style>
+		[v-cloak] { display: none; }
+		</style>
+		<script src="static/js/vue.js"></script>
+		<script src="static/js/vue-resource.min.js"></script>
+		
+	</head>
+	<body>
+		<div id="app"  v-cloak>
+			<p>购买请记得刷新，显示你的库存</p>
+				<table>
+					<thead>
+						<tr>
+							<th>序号</th>
+							<th>出售人</th>
+							<th>商品名称</th>
+							<th>商品描述</th>
+							<th>商品价格</th>
+							<th>操作</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr v-for="lis in listt">
+							<td>{{ lis.id }}</td>
+							<td>{{ lis.name }}</td>
+							<td>{{ lis.pname }}</td>
+							<td>{{ lis.description }}</td>
+							<td>{{ lis.price }}</td>
+							<td>
+								<button @click="buyPoduct(lis.id)">购买</button>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+					<div class="box">
+						<br />
+						<p>出售人名字：<input type="text" v-model="new_listt.name"></p>
+						<p>商品名称：<input type="text" v-model="new_listt.pname"></p>
+						<p>商品描述：<input type="text" v-model="new_listt.description"></p>
+						<p>商品价格：<input type="number" v-model="new_listt.price"></p>
+						<button @click="addPoduct">确认发表商品</button>
+					</div>
+		</div>
+
+		
+				<script>
+			var vm = new Vue({
+				el:'#app',
+				data:{
+					listt:[],
+					new_listt: {
+					name: '',
+					pname: '',
+					description: '',
+					price:0
+				}
+				},
+				
+				mounted: function(){
+				this.get()
+				},
+
+				methods:{
+					addPoduct: function() {
+					var self = this;
+					self.$http.post('/todo/api/addPoductApi', {
+						name: self.new_listt.name,
+						pname: self.new_listt.pname,
+						description: self.new_listt.description,
+						price: self.new_listt.price
+					}).then(function(res) {
+						self.listt = res.data.listt;
+					});
+				},
+					get:function() {
+						var self = this;
+						//在编译后即调用API接口取得服务器端数据
+						self.$http.get('/todo/api/getPoductApi').then(function(res) {
+							self.listt = res.data.listt;
+						},function(){
+		                        console.log('请求失败处理');
+		                    });
+					},
+					buyPoduct: function(idd) {
+						var self = this;
+						self.$http.post('/todo/api/buyPoductApi', {
+							id: idd
+						}).then(function(res) {
+							self.listt = res.data.listt;
+						});
+					},
+				}
+			});
+		</script>
+	</body>
+</html>
