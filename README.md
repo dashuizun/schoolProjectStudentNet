@@ -57,7 +57,6 @@
   │
   └─front
       │  communityHt.html	用户交流页面
-      │  dataInsert.html
       │  index.html	主页
       │  login.html	注册页面
       │  regist.html	登录页面
@@ -67,10 +66,11 @@
       ├─scr
       └─static	静态文件夹
           ├─css	css文件夹
-          │      productHt.css	二手市场CSS文件
+          │      productCss.css	二手市场CSS文件
           │      
           ├─img	图片文件夹
           └─js	js文件夹
+  				vue-resource@151.js
                   vue-resource.min.js
                   vue.js
   ```
