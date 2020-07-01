@@ -5,12 +5,51 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="css/style.css" rel="stylesheet">
+        <script src="static/js/vue.js"></script>
+		<script src="static/js/vue-resource.min.js"></script>
+		<script src="static/js/axios.min.js"></script>
     </head>
     <body>
-        <form method="get" action='/login'>
-            <label>用户名：<input type="text" name="user" value=""></label><br>
-            <label>密码：<input type="password" name="password" value=""></label><br>
-            <input type="submit" value="登录">
-        </form>
+    	<div id="app">
+    		<p>用户名：<input type="text" v-model="new_login.name"></p>
+			<p>密码：<input type="text" v-model="new_login.passwor"></p>
+            <button @click="login">登录</button>
+    	</div>
+        
+<script type="text/javascript">
+
+  var login = new Vue({
+    el: '#app',
+    data:{
+    	loginDa: [],
+		new_login: {
+		    name: '',
+		    passwor: '',
+		    status: ''
+	    }
+    },
+	mounted: function(){
+				
+				},
+    methods: {
+      login:function() {
+               axios.post('/todo/api/loginApi',{
+                   name: this.new_login.name,
+                   passwor: this.new_login.passwor
+               }).then(function (response) {
+                   console.log(response.status)
+                   // 其实是应该走后台路由
+                   if(parseInt(response.status) === 200){
+                   		alert('登录成功')
+                       	window.location.href= '/'
+                   }
+               }).catch(function (error) {
+                   console.log(error.response)
+               })
+			}
+
+    }
+  })
+</script>
     </body>
 </html>
