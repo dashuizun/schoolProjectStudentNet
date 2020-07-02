@@ -1,4 +1,5 @@
-from flask import render_template
+from flask import render_template, redirect, url_for, request
+from flask_login import login_required, logout_user, current_user
 from . import main
 
 # 主页
@@ -25,3 +26,9 @@ def regist():
 @main.route('/cs')
 def cs():
     return render_template('cs.html')
+
+@main.route('/logout')
+@login_required
+def logout():
+    logout_user()
+    return '登出成功!'

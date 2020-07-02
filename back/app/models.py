@@ -41,12 +41,8 @@ class User(db.Model,UserMixin):
     def __getitem__(self, item):
         return getattr(self, item)
 
-
-# 登录验证
-@login_manager.user_loader
-def login_user(user_id):
-    return User.query.get(int(user_id))
-
+    def is_authenticated(self):
+        return True
 # 设置评论模型
 class Community(db.Model):
     __tablename__ = 'community'
