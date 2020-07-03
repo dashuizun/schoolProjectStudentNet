@@ -10,9 +10,10 @@ login_manager.login_view = 'login'
 login_manager.login_message_category = 'info'
 login_manager.login_message = '请登录'
 
+
 def create_app(config_name):
     # 配置Flask静态目录、URL目录
-    app = Flask(__name__,template_folder='../../front',static_url_path='',static_folder='../../front')
+    app = Flask(__name__, template_folder='../../front', static_url_path='', static_folder='../../front')
     # 导入配置文件
     app.config.from_object(config[config_name])
     config[config_name].init_app(app)

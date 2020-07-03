@@ -1,51 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title></title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link href="css/style.css" rel="stylesheet">
-        <script src="static/js/vue.js"></script>
-		<script src="static/js/vue-resource.min.js"></script>
-    </head>
-    <body>
-	<div id="app">
-		<div class="box">
-			<p>用户名：<input type="text" v-model="new_regist.name"></p>
-			<p>密码：<input type="text" v-model="new_regist.passwor"></p>
-			<p>电子邮箱：<input type="text" v-model="new_regist.email"></p>
-			<button @click="addTask">注册</button>
+
+	<head>
+		<title></title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link href="css/style.css" rel="stylesheet">
+		<script src="js/vue.js"></script>
+		<script src="js/vue-resource.min.js"></script>
+	</head>
+
+	<body>
+		<div id="app">
+			<div class="box">
+				<p>用户名：<input type="text" v-model="new_regist.name"></p>
+				<p>密码：<input type="text" v-model="new_regist.passwor"></p>
+				<p>电子邮箱：<input type="text" v-model="new_regist.email"></p>
+				<button @click="addTask">注册</button>
+			</div>
 		</div>
-	</div>
-        
-        <script>
-		var vue = new Vue({
-			el: '#app',
-			data: {
-				tasks: [],
-				new_regist: {
-					name: '',
-					passwor: '',
-					email: ''
-				}
-			},
-			methods: {
-				addTask: function() {
-					var self = this;
-					self.$http.post('/todo/api/addRegistApi', {
-						name: self.new_regist.name,
-						passwor: self.new_regist.passwor,
-						email: self.new_regist.email
-					}).then(function(res) {
-						self.tasks = res.data.tasks;
-				    	alert("注册成功,点击跳转")
-				    	location.href = "/login"
-					});
-					
-					
+
+		<script>
+			var vue = new Vue({
+				el: '#app',
+				data: {
+					tasks: [],
+					new_regist: {
+						name: '',
+						passwor: '',
+						email: ''
+					}
 				},
-			}
-		})
-	</script>
-    </body>
+				methods: {
+					addTask: function() {
+						var self = this;
+						self.$http.post('/todo/api/addRegistApi', {
+							name: self.new_regist.name,
+							passwor: self.new_regist.passwor,
+							email: self.new_regist.email
+						}).then(function(res) {
+							self.tasks = res.data.tasks;
+							alert("注册成功,点击跳转")
+							location.href = "/login"
+						});
+
+					},
+				}
+			})
+		</script>
+	</body>
+
 </html>

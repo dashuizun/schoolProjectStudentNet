@@ -1,5 +1,5 @@
-from flask import jsonify, make_response, url_for, g, request, redirect, abort,render_template, flash, session, request, redirect, url_for, render_template, flash
-from flask_login import LoginManager, login_user, logout_user, current_user, login_required
+from flask import jsonify, abort, request
+from flask_login import login_user,  current_user, login_required
 from . import api
 from .. import db
 from ..models import User
@@ -7,7 +7,8 @@ from ..models import JSONEncoder
 from .. import login_manager
 import json
 
-# 获取数据
+
+# 获取登录数据
 @api.route('/todo/api/getLoginApi', methods=['GET'])
 def getLogin():
     loginnName = [{'lname': '游客'}]
@@ -16,29 +17,26 @@ def getLogin():
         print('1')
     return jsonify({'loginnName': loginnName})
 
-# 添加数据
+
+# 注册接口
 @api.route('/todo/api/addRegistApi', methods=['POST'])
 def addRegist():
-	test_data = User.query.all()
-	tasks = json.loads(json.dumps(test_data, cls=JSONEncoder))
-	if request.json['name'] == "":
-		abort(400)
-	task = {
-		'id' : tasks[-1]['id'] + 1,
-		'name': request.json['name'],
+    test_data = User.query.all()
+    tasks = json.loads(json.dumps(test_data, cls=JSONEncoder))
+    if request.json['name'] == "":
+        abort(400)
+    task = {
+        'id': tasks[-1]['id'] + 1,
+        'name': request.json['name'],
         'password': request.json.get('passwor', ""),
-		'email': request.json.get('email', ""),
-	}
-	tas = User(id= tasks[-1]['id']+1,name= request.json['name'],
-               password= request.json.get('passwor', ""),email= request.json.get('email', ""))
-	db.session.add(tas)
-	db.session.commit()
-	tasks.append(task)
-	return jsonify({'tasks': tasks}), 201
-
-
-# 数据
-# json.dumps(loginnName[0]['name'], ensure_ascii=False)
+        'email': request.json.get('email', ""),
+    }
+    tas = User(id=tasks[-1]['id'] + 1, name=request.json['name'],
+               password=request.json.get('passwor', ""), email=request.json.get('email', ""))
+    db.session.add(tas)
+    db.session.commit()
+    tasks.append(task)
+    return jsonify({'tasks': tasks}), 201
 
 @login_manager.user_loader
 def load_user(user_id):
@@ -53,8 +51,8 @@ def load_user(user_id):
 def cscscs():
     return '当前用户: %s' % current_user.get_id()
 
-
-@api.route('/todo/api/loginApi', methods=['GET','POST'])
+# 登录接口
+@api.route('/todo/api/loginApi', methods=['GET', 'POST'])
 def login():
     if request.method == 'POST':
 
@@ -72,6 +70,7 @@ def login():
 
     # GET 请求
     return 'cs %s' % current_user.get_id()
+
 
 def query_user(user_name):
     for user in json.loads(json.dumps(User.query.all(), cls=JSONEncoder)):

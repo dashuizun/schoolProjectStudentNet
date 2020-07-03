@@ -1,4 +1,4 @@
-from app import create_app
+from back.app import create_app
 
 # 配置app
 app = create_app('default')

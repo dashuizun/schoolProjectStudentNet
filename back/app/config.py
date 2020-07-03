@@ -1,5 +1,6 @@
 import os
 
+
 class Config:
     SECRET_KEY = '123456'
     SQLALCHEMY_COMMIT_ON_TEARDOWN = True
@@ -25,6 +26,7 @@ class Config:
     def init_app(app):
         pass
 
+
 class DevelopmentConfig(Config):
     DEBUG = True
     SQLALCHEMY_DATABASE_URI = 'mysql+mysqlconnector://root:123456@127.0.0.1:3306/studentsystem'
@@ -34,8 +36,10 @@ class TestingConfig(Config):
     TESTING = True
     SQLALCHEMY_DATABASE_URI = 'mysql+mysqlconnector://root:123456@127.0.0.1:3306/studentsystem'
 
+
 class ProductionConfig(Config):
     SQLALCHEMY_DATABASE_URI = 'mysql+mysqlconnector://root:123456@127.0.0.1:3306/studentsystem'
+
 
 config = {
     'development': DevelopmentConfig,
