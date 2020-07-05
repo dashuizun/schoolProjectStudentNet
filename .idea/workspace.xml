@@ -3,66 +3,17 @@
   <component name="ChangeListManager">
     <list default="true" id="7da9ada7-78e1-47a8-88e7-1597677dac13" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/back/app/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/back/app/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/back/app/api/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/back/app/api/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/back/app/api/communityApi.py" beforeDir="false" afterPath="$PROJECT_DIR$/back/app/api/communityApi.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/back/app/api/loginRegistApi.py" beforeDir="false" afterPath="$PROJECT_DIR$/back/app/api/loginRegistApi.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/back/app/api/productApi.py" beforeDir="false" afterPath="$PROJECT_DIR$/back/app/api/productApi.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/back/app/config.py" beforeDir="false" afterPath="$PROJECT_DIR$/back/app/config.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/back/app/main/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/back/app/main/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/app/api/chuan.py" beforeDir="false" afterPath="$PROJECT_DIR$/back/app/api/chuan.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/back/app/main/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/back/app/main/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/back/app/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/back/app/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/back/myapp.py" beforeDir="false" afterPath="$PROJECT_DIR$/back/myapp.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/back/venv/Lib/site-packages/click/termui.py" beforeDir="false" afterPath="$PROJECT_DIR$/back/venv/Lib/site-packages/click/termui.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/back/venv/Lib/site-packages/flask/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/back/venv/Lib/site-packages/flask/app.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/back/venv/Lib/site-packages/flask/blueprints.py" beforeDir="false" afterPath="$PROJECT_DIR$/back/venv/Lib/site-packages/flask/blueprints.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/back/venv/Lib/site-packages/flask/debughelpers.py" beforeDir="false" afterPath="$PROJECT_DIR$/back/venv/Lib/site-packages/flask/debughelpers.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/back/venv/Lib/site-packages/flask/helpers.py" beforeDir="false" afterPath="$PROJECT_DIR$/back/venv/Lib/site-packages/flask/helpers.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/back/venv/Lib/site-packages/flask_bootstrap/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/back/venv/Lib/site-packages/flask_bootstrap/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/back/venv/Lib/site-packages/flask_bootstrap/static/jquery.js" beforeDir="false" afterPath="$PROJECT_DIR$/back/venv/Lib/site-packages/flask_bootstrap/static/jquery.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/back/venv/Lib/site-packages/flask_bootstrap/static/jquery.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/back/venv/Lib/site-packages/flask_bootstrap/static/jquery.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/back/venv/Lib/site-packages/flask_bootstrap/static/js/bootstrap.js" beforeDir="false" afterPath="$PROJECT_DIR$/back/venv/Lib/site-packages/flask_bootstrap/static/js/bootstrap.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/back/venv/Lib/site-packages/jinja2/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/back/venv/Lib/site-packages/jinja2/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/back/venv/Lib/site-packages/jinja2/asyncsupport.py" beforeDir="false" afterPath="$PROJECT_DIR$/back/venv/Lib/site-packages/jinja2/asyncsupport.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/back/venv/Lib/site-packages/jinja2/compiler.py" beforeDir="false" afterPath="$PROJECT_DIR$/back/venv/Lib/site-packages/jinja2/compiler.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/back/venv/Lib/site-packages/jinja2/debug.py" beforeDir="false" afterPath="$PROJECT_DIR$/back/venv/Lib/site-packages/jinja2/debug.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/back/venv/Lib/site-packages/jinja2/exceptions.py" beforeDir="false" afterPath="$PROJECT_DIR$/back/venv/Lib/site-packages/jinja2/exceptions.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/back/venv/Lib/site-packages/jinja2/filters.py" beforeDir="false" afterPath="$PROJECT_DIR$/back/venv/Lib/site-packages/jinja2/filters.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/back/venv/Lib/site-packages/jinja2/lexer.py" beforeDir="false" afterPath="$PROJECT_DIR$/back/venv/Lib/site-packages/jinja2/lexer.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/back/venv/Lib/site-packages/jinja2/nativetypes.py" beforeDir="false" afterPath="$PROJECT_DIR$/back/venv/Lib/site-packages/jinja2/nativetypes.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/back/venv/Lib/site-packages/jinja2/parser.py" beforeDir="false" afterPath="$PROJECT_DIR$/back/venv/Lib/site-packages/jinja2/parser.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/back/venv/Lib/site-packages/jinja2/runtime.py" beforeDir="false" afterPath="$PROJECT_DIR$/back/venv/Lib/site-packages/jinja2/runtime.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/back/venv/Lib/site-packages/jinja2/sandbox.py" beforeDir="false" afterPath="$PROJECT_DIR$/back/venv/Lib/site-packages/jinja2/sandbox.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/back/venv/Lib/site-packages/pip-19.0.3-py3.7.egg/pip/_internal/resolve.py" beforeDir="false" afterPath="$PROJECT_DIR$/back/venv/Lib/site-packages/pip-19.0.3-py3.7.egg/pip/_internal/resolve.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/back/venv/Lib/site-packages/pip-19.0.3-py3.7.egg/pip/_internal/vcs/mercurial.py" beforeDir="false" afterPath="$PROJECT_DIR$/back/venv/Lib/site-packages/pip-19.0.3-py3.7.egg/pip/_internal/vcs/mercurial.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/back/venv/Lib/site-packages/pip-19.0.3-py3.7.egg/pip/_vendor/html5lib/filters/sanitizer.py" beforeDir="false" afterPath="$PROJECT_DIR$/back/venv/Lib/site-packages/pip-19.0.3-py3.7.egg/pip/_vendor/html5lib/filters/sanitizer.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/back/venv/Lib/site-packages/sqlalchemy/dialects/postgresql/provision.py" beforeDir="false" afterPath="$PROJECT_DIR$/back/venv/Lib/site-packages/sqlalchemy/dialects/postgresql/provision.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/back/venv/Lib/site-packages/sqlalchemy/engine/default.py" beforeDir="false" afterPath="$PROJECT_DIR$/back/venv/Lib/site-packages/sqlalchemy/engine/default.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/back/venv/Lib/site-packages/sqlalchemy/orm/interfaces.py" beforeDir="false" afterPath="$PROJECT_DIR$/back/venv/Lib/site-packages/sqlalchemy/orm/interfaces.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/back/venv/Lib/site-packages/sqlalchemy/orm/relationships.py" beforeDir="false" afterPath="$PROJECT_DIR$/back/venv/Lib/site-packages/sqlalchemy/orm/relationships.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/back/venv/Lib/site-packages/sqlalchemy/sql/operators.py" beforeDir="false" afterPath="$PROJECT_DIR$/back/venv/Lib/site-packages/sqlalchemy/sql/operators.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/back/venv/Lib/site-packages/sqlalchemy/sql/schema.py" beforeDir="false" afterPath="$PROJECT_DIR$/back/venv/Lib/site-packages/sqlalchemy/sql/schema.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/back/venv/Lib/site-packages/sqlalchemy/testing/config.py" beforeDir="false" afterPath="$PROJECT_DIR$/back/venv/Lib/site-packages/sqlalchemy/testing/config.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/back/venv/Lib/site-packages/sqlalchemy/testing/plugin/plugin_base.py" beforeDir="false" afterPath="$PROJECT_DIR$/back/venv/Lib/site-packages/sqlalchemy/testing/plugin/plugin_base.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/back/venv/Lib/site-packages/werkzeug/routing.py" beforeDir="false" afterPath="$PROJECT_DIR$/back/venv/Lib/site-packages/werkzeug/routing.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/back/venv/Lib/site-packages/werkzeug/serving.py" beforeDir="false" afterPath="$PROJECT_DIR$/back/venv/Lib/site-packages/werkzeug/serving.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/back/venv/Lib/site-packages/werkzeug/utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/back/venv/Lib/site-packages/werkzeug/utils.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/communityHt.html" beforeDir="false" afterPath="$PROJECT_DIR$/front/communityHt.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/cs.html" beforeDir="false" afterPath="$PROJECT_DIR$/front/cs.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/front/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/front/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/productHt.html" beforeDir="false" afterPath="$PROJECT_DIR$/front/productHt.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/regist.html" beforeDir="false" afterPath="$PROJECT_DIR$/front/regist.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/static/css/productCss.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/static/home.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/static/js/axios.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/static/js/main.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/static/js/vue-resource.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/static/js/vue-resource@1.5.1.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/static/js/vue.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/chuan.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/communityHt.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/cs.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/front/js/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/login.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/productHt.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/regist.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/开发文档.md" beforeDir="false" afterPath="$PROJECT_DIR$/开发文档.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/新建文本文档.txt" beforeDir="false" afterPath="$PROJECT_DIR$/新建文本文档.txt" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -85,110 +36,79 @@
     <select />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+    <leaf>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/back/app/main/__init__.py">
+        <entry file="file://$PROJECT_DIR$/front/myZhuye.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="112">
-              <caret line="4" column="19" selection-start-line="4" selection-start-column="19" selection-end-line="4" selection-end-column="19" />
+            <state relative-caret-position="252">
+              <caret line="9" column="8" selection-start-line="9" selection-start-column="8" selection-end-line="9" selection-end-column="8" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/back/myapp.py">
+        <entry file="file://$PROJECT_DIR$/front/single.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="112">
-              <caret line="4" selection-start-line="4" selection-end-line="4" />
+            <state relative-caret-position="280">
+              <caret line="10" column="30" selection-start-line="10" selection-start-column="30" selection-end-line="10" selection-end-column="30" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/front/communityHt.html">
+        <entry file="file://$PROJECT_DIR$/front/single1.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="28">
-              <caret line="8" column="30" selection-start-line="8" selection-start-column="30" selection-end-line="8" selection-end-column="30" />
+            <state relative-caret-position="280">
+              <caret line="10" column="30" selection-start-line="10" selection-start-column="30" selection-end-line="10" selection-end-column="30" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/back/app/__init__.py">
+        <entry file="file://$PROJECT_DIR$/front/single2.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="336">
-              <caret line="15" column="28" selection-start-line="15" selection-start-column="28" selection-end-line="15" selection-end-column="28" />
-              <folding>
-                <element signature="e#0#23#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/back/app/config.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="168">
-              <caret line="6" column="26" selection-start-line="6" selection-start-column="26" selection-end-line="6" selection-end-column="26" />
+            <state relative-caret-position="280">
+              <caret line="10" column="30" selection-start-line="10" selection-start-column="30" selection-end-line="10" selection-end-column="30" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/back/app/models.py">
+        <entry file="file://$PROJECT_DIR$/front/single3.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="364">
-              <caret line="13" column="38" selection-start-line="13" selection-start-column="38" selection-end-line="13" selection-end-column="38" />
-              <folding>
-                <element signature="e#0#16#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="420">
+              <caret line="15" column="11" lean-forward="true" selection-start-line="15" selection-start-column="11" selection-end-line="15" selection-end-column="11" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/back/app/api/productApi.py">
+        <entry file="file://$PROJECT_DIR$/front/lunIndex.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="56">
-              <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
+            <state relative-caret-position="280">
+              <caret line="10" column="30" selection-start-line="10" selection-start-column="24" selection-end-line="10" selection-end-column="30" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/back/app/api/communityApi.py">
+        <entry file="file://$PROJECT_DIR$/front/contact.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="252">
-              <caret line="9" column="6" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="6" />
-              <folding>
-                <element signature="e#0#56#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/back/app/api/loginRegistApi.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-224">
-              <caret line="22" column="11" selection-start-line="22" selection-start-column="11" selection-end-line="22" selection-end-column="11" />
-              <folding>
-                <element signature="e#0#41#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/back/app/main/views.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="28">
-              <caret line="1" column="51" selection-start-line="1" selection-start-column="51" selection-end-line="1" selection-end-column="51" />
+              <caret line="9" column="30" selection-start-line="9" selection-start-column="30" selection-end-line="9" selection-end-column="30" />
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="Python Script" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -204,15 +124,28 @@
         <option value="$PROJECT_DIR$/back/app/config.py" />
         <option value="$PROJECT_DIR$/back/app/main/__init__.py" />
         <option value="$PROJECT_DIR$/back/app/api/productApi.py" />
-        <option value="$PROJECT_DIR$/back/app/main/views.py" />
         <option value="$PROJECT_DIR$/back/app/models.py" />
         <option value="$PROJECT_DIR$/back/app/api/loginRegistApi.py" />
+        <option value="$PROJECT_DIR$/front/index.html" />
+        <option value="$PROJECT_DIR$/back/app/main/views.py" />
+        <option value="$PROJECT_DIR$/back/app/api/chuan.py" />
+        <option value="$PROJECT_DIR$/front/chuan.html" />
+        <option value="$PROJECT_DIR$/readonly/css/skel.css" />
+        <option value="$PROJECT_DIR$/front/css/skel.css" />
+        <option value="$PROJECT_DIR$/front/myZhuye.html" />
+        <option value="$PROJECT_DIR$/front/lunIndex.html" />
+        <option value="$PROJECT_DIR$/front/contact.html" />
+        <option value="$PROJECT_DIR$/front/single.html" />
+        <option value="$PROJECT_DIR$/front/single1.html" />
+        <option value="$PROJECT_DIR$/front/single2.html" />
+        <option value="$PROJECT_DIR$/front/single3.html" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="69" />
-    <option name="width" value="1549" />
+    <option name="x" value="245" />
+    <option name="y" value="16" />
+    <option name="width" value="1384" />
     <option name="height" value="1087" />
   </component>
   <component name="ProjectView">
@@ -262,7 +195,18 @@
               <item name="schoolProjectStudentNet" type="b2602c69:ProjectViewProjectNode" />
               <item name="schoolProjectStudentNet" type="462c0819:PsiDirectoryNode" />
               <item name="front" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="schoolProjectStudentNet" type="b2602c69:ProjectViewProjectNode" />
+              <item name="schoolProjectStudentNet" type="462c0819:PsiDirectoryNode" />
+              <item name="readonly" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="schoolProjectStudentNet" type="b2602c69:ProjectViewProjectNode" />
+              <item name="schoolProjectStudentNet" type="462c0819:PsiDirectoryNode" />
+              <item name="readonly" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -271,9 +215,10 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Git/schoolProjectStudentNet" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Git/PicShare-Vue-Flask-master" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -348,6 +293,8 @@
       <workItem from="1593765621175" duration="4511000" />
       <workItem from="1593771971084" duration="746000" />
       <workItem from="1593772765813" duration="1077000" />
+      <workItem from="1593830598924" duration="603000" />
+      <workItem from="1593939439575" duration="4703000" />
     </task>
     <task id="LOCAL-00001" summary="7/1">
       <created>1593603742708</created>
@@ -360,19 +307,43 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6427000" />
+    <option name="totallyTimeSpent" value="11733000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="69" y="0" width="1549" height="1087" extended-state="0" />
+    <frame x="245" y="16" width="1384" height="1087" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19073203" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17371601" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32948583" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32952183" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32948583" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39979014" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Database Changes" order="9" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="bottom" id="Terminal" order="11" />
+      <window_info anchor="bottom" id="Python Console" order="12" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Remote Host" order="3" />
+      <window_info anchor="right" id="SciView" order="4" />
+      <window_info anchor="right" id="Database" order="5" weight="0.32873806" />
+    </layout>
+    <layout-to-restore>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19610476" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32948583" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32948583" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39979014" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -388,7 +359,7 @@
       <window_info anchor="right" id="Remote Host" order="3" />
       <window_info anchor="right" id="SciView" order="4" />
       <window_info anchor="right" id="Database" order="5" weight="0.3293371" />
-    </layout>
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -398,7 +369,7 @@
     <option name="LAST_COMMIT_MESSAGE" value="7/1" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/schoolProjectStudentNet$myapp.coverage" NAME="myapp Coverage Results" MODIFIED="1593772278999" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/back" />
+    <SUITE FILE_PATH="coverage/schoolProjectStudentNet$myapp.coverage" NAME="myapp Coverage Results" MODIFIED="1593940851877" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/back" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/back/app/template/cs.html" />
@@ -464,33 +435,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/back/app/main/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="28">
-          <caret line="1" column="51" selection-start-line="1" selection-start-column="51" selection-end-line="1" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/front/communityHt.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="28">
-          <caret line="8" column="30" selection-start-line="8" selection-start-column="30" selection-end-line="8" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/back/app/api/communityApi.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="9" column="6" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="6" />
-          <folding>
-            <element signature="e#0#56#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/back/app/api/loginRegistApi.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-224">
+        <state relative-caret-position="420">
           <caret line="22" column="11" selection-start-line="22" selection-start-column="11" selection-end-line="22" selection-end-column="11" />
           <folding>
             <element signature="e#0#41#0" expanded="true" />
@@ -498,13 +445,151 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/front/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5824">
+          <caret line="208" column="12" selection-start-line="208" selection-start-column="12" selection-end-line="208" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/back/app/main/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="688">
+          <caret line="48" column="21" selection-start-line="48" selection-start-column="21" selection-end-line="48" selection-end-column="21" />
+          <folding>
+            <element signature="e#0#33#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/front/communityHt.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="6" selection-start-line="6" selection-end-line="12" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/back/app/api/communityApi.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="155">
+          <caret line="9" selection-start-line="9" selection-end-line="35" selection-end-column="41" />
+          <folding>
+            <element signature="e#0#56#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/back/app/api/chuan.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="448">
+          <caret line="16" column="3" selection-start-line="16" selection-start-column="3" selection-end-line="16" selection-end-column="3" />
+          <folding>
+            <element signature="e#0#56#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/front/chuan.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="533">
+          <caret line="35" column="18" selection-start-line="35" selection-start-column="18" selection-end-line="35" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/back/app/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="364">
-          <caret line="13" column="38" selection-start-line="13" selection-start-column="38" selection-end-line="13" selection-end-column="38" />
-          <folding>
-            <element signature="e#0#16#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="84">
+          <caret line="3" column="25" selection-start-line="3" selection-start-column="25" selection-end-line="3" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/readonly/css/font-awesome.min.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/front/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-6888">
+          <caret line="18" column="56" lean-forward="true" selection-start-line="18" selection-start-column="56" selection-end-line="18" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/readonly/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="28">
+          <caret line="60" column="29" selection-start-line="60" selection-start-column="29" selection-end-line="60" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/readonly/css/style-xlarge.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="2" lean-forward="true" selection-start-column="2" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/readonly/css/skel.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="447">
+          <caret line="48" column="9" selection-start-line="48" selection-start-column="9" selection-end-line="48" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/front/css/skel.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="17" column="5" lean-forward="true" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/front/css/style-xlarge.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/front/lunIndex.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="10" column="30" selection-start-line="10" selection-start-column="24" selection-end-line="10" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/front/contact.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="9" column="30" selection-start-line="9" selection-start-column="30" selection-end-line="9" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/front/myZhuye.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="9" column="8" selection-start-line="9" selection-start-column="8" selection-end-line="9" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/front/single.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="10" column="30" selection-start-line="10" selection-start-column="30" selection-end-line="10" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/front/single1.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="10" column="30" selection-start-line="10" selection-start-column="30" selection-end-line="10" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/front/single2.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="10" column="30" selection-start-line="10" selection-start-column="30" selection-end-line="10" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/front/single3.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="15" column="11" lean-forward="true" selection-start-line="15" selection-start-column="11" selection-end-line="15" selection-end-column="11" />
         </state>
       </provider>
     </entry>

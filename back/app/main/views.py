@@ -44,3 +44,8 @@ def cs():
 def logout():
     logout_user()
     return '登出成功!'
+
+
+@main.route('/chuan')
+def chuan():
+    return render_template('chuan.html')
