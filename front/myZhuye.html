@@ -1,5 +1,6 @@
 <!DOCTYPE HTML>
 <html>
+
 	<head>
 		<title>个人主页</title>
 		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
@@ -19,128 +20,158 @@
 		</noscript>
 
 	</head>
-	<body>
-		<div id="wrapper">
 
+	<body>
+		<div id="app" v-cloak>
+			<div id="wrapper">
 
 				<section id="header" class="skel-layers-fixed">
 					<header>
 						<span class="image avatar"><img src="images/avatar.jpg" alt="" /></span>
-						<h1 id="logo"><a href="#">名字</a></h1>
-						<p>个人签名<br />
-						...</p>
+						<h1 id="logo"><a>{{ loginN[0].lname }}</a></h1>
+						<p>个人签名<br /> ...
+						</p>
 					</header>
 					<nav id="nav">
 						<ul>
-							<li><a href="#one" class="active">关于我</a></li>
-							<li><a href="#two">我的爱好和特点</a></li>
-							<li><a href="#three">个人成就和展示</a></li>
-							<li><a href="#four">联系我</a></li>
-							<li><a href="#">论坛</a></li>
+							<li>
+								<a href="#one" class="active">关于我</a>
+							</li>
+							<li>
+								<a href="#two">我的爱好和特点</a>
+							</li>
+							<li>
+								<a href="#three">个人成就和展示</a>
+							</li>
+							<li>
+								<a href="#four">联系我</a>
+							</li>
+							<li>
+								<a href="/">论坛</a>
+							</li>
 						</ul>
 					</nav>
 				</section>
 
-
 				<div id="main">
 
-					
-						<section id="one">
-							<div class="container">
-								<header class="major">
-									<h2>欢迎来到我的个人主页</h2>
-									<p>Just an incredibly simple responsive site<br />
-									template freebie by <a href="http://html5up.net">HTML5 UP</a>.</p>
-								</header>
-								<p>Faucibus sed lobortis aliquam lorem blandit. Lorem eu nunc metus col. Commodo id in arcu ante lorem ipsum sed accumsan erat praesent faucibus commodo ac mi lacus. Adipiscing mi ac commodo. Vis aliquet tortor ultricies non ante erat nunc integer eu ante ornare amet commetus vestibulum blandit integer in curae ac faucibus integer non. Adipiscing cubilia elementum.</p>
-							</div>
-						</section>
-						
-					
-						<section id="two">
-							<div class="container">
-								<h3>Things I Can Do</h3>
-								<p>Integer eu ante ornare amet commetus vestibulum blandit integer in curae ac faucibus integer non. Adipiscing cubilia elementum integer lorem ipsum dolor sit amet.</p>
-								<ul class="feature-icons">
-									<li class="fa-code">Write all the code</li>
-									<li class="fa-cubes">Stack small boxes</li>
-									<li class="fa-book">Read books and stuff</li>
-									<li class="fa-coffee">Drink much coffee</li>
-									<li class="fa-bolt">Lightning bolt</li>
-									<li class="fa-users">Shadow clone technique</li>
-								</ul>
-							</div>
-						</section>
-						
+					<section id="one">
+						<div class="container">
+							<header class="major">
+								<h2>欢迎来到我的个人主页</h2>
+								<p>Just an incredibly simple responsive site<br /> template freebie by
+									<a href="http://html5up.net">HTML5 UP</a>.</p>
+							</header>
+							<p>Faucibus sed lobortis aliquam lorem blandit. Lorem eu nunc metus col. Commodo id in arcu ante lorem ipsum sed accumsan erat praesent faucibus commodo ac mi lacus. Adipiscing mi ac commodo. Vis aliquet tortor ultricies non ante erat nunc integer eu ante ornare amet commetus vestibulum blandit integer in curae ac faucibus integer non. Adipiscing cubilia elementum.</p>
+						</div>
+					</section>
 
-						<section id="three">
-							<div class="container">
-								<h3>A Few Accomplishments</h3>
-								<p>Integer eu ante ornare amet commetus vestibulum blandit integer in curae ac faucibus integer non. Adipiscing cubilia elementum integer. Integer eu ante ornare amet commetus.</p>
-								<div class="features">
-									<article>
-										<a href="#" class="image"><img src="images/pic01.jpg" alt="" /></a>
-										<div class="inner">
-											<h4>Possibly broke spacetime</h4>
-											<p>Integer eu ante ornare amet commetus vestibulum blandit integer in curae ac faucibus integer adipiscing ornare amet.</p>
-										</div>
-									</article>
-									<article>
-										<a href="#" class="image"><img src="images/pic02.jpg" alt="" /></a>
-										<div class="inner">
-											<h4>Terraformed a small moon</h4>
-											<p>Integer eu ante ornare amet commetus vestibulum blandit integer in curae ac faucibus integer adipiscing ornare amet.</p>
-										</div>
-									</article>
-									<article>
-										<a href="#" class="image"><img src="images/pic03.jpg" alt="" /></a>
-										<div class="inner">
-											<h4>Snapped dark matter in the wild</h4>
-											<p>Integer eu ante ornare amet commetus vestibulum blandit integer in curae ac faucibus integer adipiscing ornare amet.</p>
-										</div>
-									</article>
+					<section id="two">
+						<div class="container">
+							<h3>Things I Can Do</h3>
+							<p>Integer eu ante ornare amet commetus vestibulum blandit integer in curae ac faucibus integer non. Adipiscing cubilia elementum integer lorem ipsum dolor sit amet.</p>
+							<ul class="feature-icons">
+								<li class="fa-code">Write all the code</li>
+								<li class="fa-cubes">Stack small boxes</li>
+								<li class="fa-book">Read books and stuff</li>
+								<li class="fa-coffee">Drink much coffee</li>
+								<li class="fa-bolt">Lightning bolt</li>
+								<li class="fa-users">Shadow clone technique</li>
+							</ul>
+						</div>
+					</section>
+
+					<section id="three">
+						<div class="container">
+							<h3>A Few Accomplishments</h3>
+							<p>Integer eu ante ornare amet commetus vestibulum blandit integer in curae ac faucibus integer non. Adipiscing cubilia elementum integer. Integer eu ante ornare amet commetus.</p>
+							<div class="features">
+								<article>
+									<a href="#" class="image"><img src="images/pic01.jpg" alt="" /></a>
+									<div class="inner">
+										<h4>Possibly broke spacetime</h4>
+										<p>Integer eu ante ornare amet commetus vestibulum blandit integer in curae ac faucibus integer adipiscing ornare amet.</p>
+									</div>
+								</article>
+								<article>
+									<a href="#" class="image"><img src="images/pic02.jpg" alt="" /></a>
+									<div class="inner">
+										<h4>Terraformed a small moon</h4>
+										<p>Integer eu ante ornare amet commetus vestibulum blandit integer in curae ac faucibus integer adipiscing ornare amet.</p>
+									</div>
+								</article>
+								<article>
+									<a href="#" class="image"><img src="images/pic03.jpg" alt="" /></a>
+									<div class="inner">
+										<h4>Snapped dark matter in the wild</h4>
+										<p>Integer eu ante ornare amet commetus vestibulum blandit integer in curae ac faucibus integer adipiscing ornare amet.</p>
+									</div>
+								</article>
+							</div>
+						</div>
+					</section>
+
+					<section id="four">
+						<div class="container">
+							<h3>Contact Me</h3>
+							<p>Integer eu ante ornare amet commetus vestibulum blandit integer in curae ac faucibus integer non. Adipiscing cubilia elementum integer. Integer eu ante ornare amet commetus.</p>
+							<form method="post" action="#">
+								<div class="row uniform collapse-at-2">
+									<div class="6u"><input type="text" name="name" id="name" placeholder="Name" /></div>
+									<div class="6u"><input type="email" name="email" id="email" placeholder="Email" /></div>
 								</div>
-							</div>
-						</section>
-						
-					
-						<section id="four">
-							<div class="container">
-								<h3>Contact Me</h3>
-								<p>Integer eu ante ornare amet commetus vestibulum blandit integer in curae ac faucibus integer non. Adipiscing cubilia elementum integer. Integer eu ante ornare amet commetus.</p>
-								<form method="post" action="#">
-									<div class="row uniform collapse-at-2">
-										<div class="6u"><input type="text" name="name" id="name" placeholder="Name" /></div>
-										<div class="6u"><input type="email" name="email" id="email" placeholder="Email" /></div>
+								<div class="row uniform">
+									<div class="12u"><input type="text" name="subject" id="subject" placeholder="Subject" /></div>
+								</div>
+								<div class="row uniform">
+									<div class="12u"><textarea name="message" id="message" placeholder="Message" rows="6"></textarea></div>
+								</div>
+								<div class="row uniform">
+									<div class="12u">
+										<ul class="actions">
+											<li><input type="submit" class="special" value="Send Message" /></li>
+											<li><input type="reset" value="Reset Form" /></li>
+										</ul>
 									</div>
-									<div class="row uniform">
-										<div class="12u"><input type="text" name="subject" id="subject" placeholder="Subject" /></div>
-									</div>
-									<div class="row uniform">
-										<div class="12u"><textarea name="message" id="message" placeholder="Message" rows="6"></textarea></div>
-									</div>
-									<div class="row uniform">
-										<div class="12u">
-											<ul class="actions">
-												<li><input type="submit" class="special" value="Send Message" /></li>
-												<li><input type="reset" value="Reset Form" /></li>
-											</ul>
-										</div>
-									</div>
-								</form>
-							</div>
-						</section>
-				
-				</div>
+								</div>
+							</form>
+						</div>
+					</section>
 
-				<section id="footer">
-					<div class="container">
-						<ul class="copyright">
-							<li>&copy; F组</li>
-						</ul>
-					</div>
-				</section>
-			
+				</div>
+			</div>
+			<script src="js/vue.js"></script>
+			<script src="js/vue-resource.min.js"></script>
+			<section id="footer">
+				<div class="container">
+					<ul class="copyright">
+						<li>&copy; F组</li>
+					</ul>
+				</div>
+			</section>
+			<script>
+				var vue = new Vue({
+					el: '#app',
+					data: {
+						loginN: [],
+					},
+					mounted: function() {
+						this.gett()
+					},
+					methods: {
+						gett: function() {
+							var self = this;
+							//在编译后即调用API接口取得服务器端数据
+							self.$http.get('/todo/api/getLoginApi').then(function(res) {
+								self.loginN = res.data.loginnName;
+							}, function() {
+								console.log('请求失败处理');
+							});
+						},
+					}
+				})
+			</script>
 		</div>
 	</body>
+
 </html>

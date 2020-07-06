@@ -6,7 +6,7 @@ from . import main
 # 主页
 @main.route('/')
 def index():
-    return render_template('index.html')
+    return render_template('lunIndex.html')
 
 
 # 评论页面
@@ -32,6 +32,33 @@ def login():
 def regist():
     return render_template('regist.html')
 
+
+# 页面
+@main.route('/single')
+def single():
+    return render_template('single.html')
+
+# 页面
+@main.route('/single1')
+def single1():
+    return render_template('single1.html')
+
+# 页面
+@main.route('/single2')
+def single2():
+    return render_template('single2.html')
+
+
+# 页面
+@main.route('/single3')
+def single3():
+    return render_template('single3.html')
+
+
+# 页面
+@main.route('/myZhuye')
+def myZhuye():
+    return render_template('myZhuye.html')
 
 # 测试页面
 @main.route('/cs')
