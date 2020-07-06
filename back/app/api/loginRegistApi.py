@@ -11,7 +11,9 @@ import json
 # 获取登录数据
 @api.route('/todo/api/getLoginApi', methods=['GET'])
 def getLogin():
+    # 给定数值
     loginnName = [{'lname': '游客'}]
+    # 如果已经登录，那么获取登录用户名，否则默认
     if current_user.is_authenticated:
         loginnName[0]['lname'] = current_user.get_id()
         print('1')
@@ -55,17 +57,18 @@ def cscscs():
 @api.route('/todo/api/loginApi', methods=['GET', 'POST'])
 def login():
     if request.method == 'POST':
-
+        # 获取前端数据
         user_id = request.json.get('name')
         user_pw = request.json.get('passwor')
+        # 将数据给到query_user方法找到该条记录
         user = query_user(user_id)
+        # 如果user不为空且密码正确
         if user is not None and user_pw == user['password']:
             print('信息----------成功登陆------------')
             curr_user = User()
             curr_user.id = user_id
             # 通过Flask-Login的login_user方法登录用户
             login_user(curr_user)
-            # loginnName[0]['name'] = user_id
             return jsonify({'code': 200, 'name': user_id})
 
     # GET 请求

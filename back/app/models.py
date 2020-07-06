@@ -17,7 +17,7 @@ class JSONEncoder(_JSONEncoder):
             return o.strftime('%Y-%m-%d %H:%M:%S')
         return json.JSONEncoder.default(self, o)
 
-
+# 重构Flask
 class Flask(_Flask):
     json_encoder = JSONEncoder
 
