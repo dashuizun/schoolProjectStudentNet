@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<title></title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link href="css/style.css" rel="stylesheet">
+		<script src="js/vue.js"></script>
+		<script src="js/vue-resource.min.js"></script>
+		<script src="js/axios.min.js"></script>
+	</head>
+
+	<body>
+		<div id="app">
+			<p>当前用户：{{ loginN[0].lname }}</p>
+			<p>用户名：<input type="text" v-model="new_login.name"></p>
+			<p>密码：<input type="text" v-model="new_login.passwor"></p>
+			<button @click="login">登录</button>
+		</div>
+
+		<script type="text/javascript">
+			var login = new Vue({
+				el: '#app',
+				data: {
+					loginDa: [],
+					loginN: [],
+					new_login: {
+						name: '',
+						passwor: '',
+						status: ''
+					},
+				},
+				mounted: function() {
+					this.get()
+				},
+				methods: {
+					login: function() {
+						axios.post('/todo/api/loginApi', {
+							name: this.new_login.name,
+							passwor: this.new_login.passwor
+						}).then(function(response) {
+							console.log(response.status)
+							// 其实是应该走后台路由
+							if(parseInt(response.status) === 200) {
+								alert('响应成功，跳转中')
+								window.location.href = '/cs'
+							}
+						}).catch(function(error) {
+							console.log(error.response)
+						})
+					},
+					get: function() {
+						var self = this;
+						//在编译后即调用API接口取得服务器端数据
+						self.$http.get('/todo/api/getLoginApi').then(function(res) {
+							self.loginN = res.data.loginnName;
+						}, function() {
+							console.log('请求失败处理');
+						});
+					}
+				}
+			})
+		</script>
+	</body>
+
+</html>

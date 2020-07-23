@@ -1,50 +1,36 @@
 from flask import jsonify, make_response, request, abort
 from . import api
+from .. import db
+from ..models import Community
+from ..models import JSONEncoder
+from flask_login import current_user
+import json
 
-#模拟json数据
-tasks = [
-    {
-		'id': 1,
-		'title': '张三',
-		'description': '这网站真好用',
-        'done': False
-    },
-    {
-		'id': 2,
-		'title': '王五',
-		'description': '这网站真的太好用了',
-        'done': False
+
+# 获取数据
+@api.route('/todo/api/communityApi', methods=['GET'])
+def getCommunity():
+    test_data = Community.query.all()
+    tasks = json.loads(json.dumps(test_data, cls=JSONEncoder))
+    return jsonify({'tasks': tasks})
+
+
+# 添加数据
+@api.route('/todo/api/addCommunityApi', methods=['POST'])
+def addCommunity():
+    cname = '游客'
+    if current_user.is_authenticated:
+        cname = current_user.get_id()
+        print('1')
+    test_data = Community.query.all()
+    tasks = json.loads(json.dumps(test_data, cls=JSONEncoder))
+    task = {
+        'id': tasks[-1]['id'] + 1,
+        'cname': cname,
+        'description': request.json.get('description', ""),
     }
-]
-#GET方法api
-@api.route('/todo/api/tasks', methods=['GET'])
-def getTasks():
-	return jsonify({'tasks': tasks})
-
-#POST方法API，添加数据项
-@api.route('/todo/api/addTask', methods=['POST'])
-def add_task():
-	if request.json['title'] == "":
-		abort(400)
-	task = {
-		'id' : tasks[-1]['id'] + 1,
-		'title': request.json['title'],
-		'description' : request.json.get('description', ""),
-		'done' : False
-	}
-	tasks.append(task)
-	return jsonify({'tasks': tasks}), 201
-
-#POST方法API，删除数据项
-@api.route('/todo/api/deleteTask', methods=['POST'])
-def delete_task():
-	task_id = request.json['id']
-	for task in tasks:
-		if task['id'] == task_id:
-			tasks.remove(task)
-			return jsonify({'tasks': tasks}), 201
-
-#404
-@api.errorhandler(404)
-def not_found(error):
-	return make_response(jsonify({'error': 'Not found'}), 404)
+    tas = Community(id=tasks[-1]['id'] + 1, cname=cname, description=request.json.get('description', ""))
+    db.session.add(tas)
+    db.session.commit()
+    tasks.append(task)
+    return jsonify({'tasks': tasks}), 201

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    		<style>
+			[v-cloak] {
+				display: none;
+			}
+		</style>
+		<script src="js/vue.js"></script>
+		<script src="js/vue-resource.min.js"></script>
+    <link rel="stylesheet" href="css/element.css.css">
+    <script src="js/element.js.js"></script>
+    <script src="js/axios.min.js"></script>
+    <script src="js/main.js"></script>
+</head>
+<body>
+ <el-upload
+        action="/mgr/common/imgUpload"
+        list-type="picture-card"
+        accept="image/*"
+        :limit="imgLimit"
+        :file-list="productImgs"
+        :multiple="isMultiple"
+        :on-preview="handlePictureCardPreview"
+        :on-remove="handleRemove"
+        :on-success="handleAvatarSuccess"
+        :before-upload="beforeAvatarUpload"
+        :on-exceed="handleExceed"
+        :on-error="imgUploadError">
+        <i class="el-icon-plus"></i>
+      </el-upload>
+      <el-dialog :visible.sync="dialogVisible">
+        <img width="100%" :src="dialogImageUrl" alt="">
+      </el-dialog>
+
+<style>
+  .avatar-uploader .el-upload {
+    border: 1px dashed #d9d9d9;
+    border-radius: 6px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+  }
+  .avatar-uploader .el-upload:hover {
+    border-color: #409EFF;
+  }
+  .avatar-uploader-icon {
+    font-size: 28px;
+    color: #8c939d;
+    width: 178px;
+    height: 178px;
+    line-height: 178px;
+    text-align: center;
+  }
+  .avatar {
+    width: 178px;
+    height: 178px;
+    display: block;
+  }
+</style>
+
+<script>
+  export default {
+    data() {
+      return {
+        imageUrl: ''
+      };
+    },
+    methods: {
+      handleAvatarSuccess(res, file) {
+        this.imageUrl = URL.createObjectURL(file.raw);
+      },
+      beforeAvatarUpload(file) {
+        const isJPG = file.type === 'image/jpeg';
+        const isLt2M = file.size / 1024 / 1024 < 2;
+
+        if (!isJPG) {
+          this.$message.error('上传头像图片只能是 JPG 格式!');
+        }
+        if (!isLt2M) {
+          this.$message.error('上传头像图片大小不能超过 2MB!');
+        }
+        return isJPG && isLt2M;
+      }
+    }
+  }
+</script>
+
+
+</body>
+</html>
